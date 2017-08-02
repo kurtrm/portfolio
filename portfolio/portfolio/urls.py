@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from portfolio.views import AboutView, HomeView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^markdown/', include('django_markdown.urls'))
+    url(r'^markdown/', include('django_markdown.urls')),
+
+    url(r'^$', HomeView.as_view(), name='home'),
+    url(r'^about/$', AboutView.as_view(), name='about')
 ]
+
+# TODO: Make an about me model and move forward.

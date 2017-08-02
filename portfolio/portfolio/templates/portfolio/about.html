@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'portfolio/base.html' %}
 {% block content %}
-<h3>content 1</h3>
-{{}}
+<!-- <h3>content 1</h3>
+    {{form.as_p}} -->
 <h3>content 2</h3>
-{{}}
+<form action="" method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Update" />
 <h3>Template Method</h3>
-<textarea name="test" id="new"></textarea>
-{% markdown_editor "#new" %}
-{% markdown_media %}
 {% endblock %}
+</form>
