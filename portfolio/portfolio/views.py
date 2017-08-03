@@ -16,4 +16,8 @@ class AboutView(FormView):
 class HomeView(TemplateView):
     """View for the homepage."""
 
-    pass
+    template_name = 'portfolio/home.html'
+
+    def get_context_data(self, **kwargs):
+        context = {'test': 'Test string.'}
+        return context
