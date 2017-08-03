@@ -1,14 +1,23 @@
 """Class based views for model-independent information."""
-from forms import AboutMe
+from portfolio.forms import AboutMe
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.base import TemplateView
 from django.views.generic.edit import FormView
 
 
-class AboutView(LoginRequiredMixin, FormView):
+class AboutView(FormView):
     """Form view for about me page."""
-    template_name = 'about.html'
+
+    template_name = 'portfolio/about.html'
     form_class = AboutMe
     success_url = 'about'
 
-    def form_valid(self, form):
-        """
+
+class HomeView(TemplateView):
+    """View for the homepage."""
+
+    template_name = 'portfolio/home.html'
+
+    def get_context_data(self, **kwargs):
+        context = {'test': 'Test string.'}
+        return context
