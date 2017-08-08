@@ -17,14 +17,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url, include
 from django.contrib import admin
-from portfolio.views import AboutView, HomeView
+from portfolio.views import HomeView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^markdown/', include('django_markdown.urls')),
 
-    url(r'^$', HomeView.as_view(), name='home'),
-    url(r'^about/$', AboutView.as_view(), name='about')
+    url(r'^$', HomeView.as_view(), name='home')
 ]
 
 if settings.DEBUG:

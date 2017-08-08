@@ -53,7 +53,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Skills</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -75,9 +75,9 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="{% static 'portfolio/img/profile.png' %}" alt="">
                     <div class="intro-text">
-                        <h1 class="name">{{ test }}</h1>
+                        <h1 class="name">{{ name }}</h1>
                         <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                        <span class="skills">Software Developer - Problem Solver</span>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>Skills</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -169,16 +169,16 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>{{ about_first }}</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>{{ about_second }}</p>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+<!--                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-download"></i> Download Theme
                     </a>
-                </div>
+ -->                </div>
             </div>
         </div>
     </section>
@@ -245,18 +245,12 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>Fremont
+                            <br>Seattle, WA 98103</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
+                        <h3>Dossier</h3>
                         <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
@@ -264,7 +258,7 @@
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -279,7 +273,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; kurtrm Portfolio 2017
                     </div>
                 </div>
             </div>
