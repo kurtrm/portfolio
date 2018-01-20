@@ -39,9 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'blog',
-    'projects',
-    'django_markdown'
-]
+    'projects'
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
