@@ -19,3 +19,15 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = {'test': 'Test string.'}
         return context
+
+
+class NetworkView(TemplateView):
+    """View for the network graph."""
+
+    template_name = 'portfolio/network.html'
+
+
+class TreeView(TemplateView):
+    """View for the decision tree."""
+
+    template_name = 'portfolio/decision_tree.html'
