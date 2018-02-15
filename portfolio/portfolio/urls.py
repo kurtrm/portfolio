@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
     url(r'^about/$', AboutView.as_view(), name='about'),
-    url(r'^network_graph/$', NetworkView.as_vew(), name='network_graph'),
+    url(r'^network_graph/$', NetworkView.as_view(), name='network_graph'),
     url(r'^decision_tree/$', TreeView.as_view(), name='decision_tree')
 ]
 
