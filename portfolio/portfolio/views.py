@@ -14,11 +14,7 @@ class AboutView(TemplateView):
 class HomeView(TemplateView):
     """View for the homepage."""
 
-    template_name = 'portfolio/index.html'
-
-    def get_context_data(self, **kwargs):
-        context = {'test': 'Test string.'}
-        return context
+    template_name = 'portfolio/home.html'
 
 
 class NetworkView(TemplateView):
