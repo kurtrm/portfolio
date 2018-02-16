@@ -102,4 +102,4 @@ ENV/
 
 # static files
 
-static/
+static/decision_tree/*.png
