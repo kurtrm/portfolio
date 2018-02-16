@@ -101,5 +101,4 @@ ENV/
 .mypy_cache/
 
 # static files
-
-static/decision_tree/*.png
+*.png
