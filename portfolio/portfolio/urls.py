@@ -15,19 +15,15 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.contrib import admin
-from portfolio.views import (AboutView,
-                             HomeView,
-                             NetworkView,
-                             TreeView)
+from portfolio.views import HomeView
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', HomeView.as_view(), name='home'),
-    url(r'^about/$', AboutView.as_view(), name='about'),
-    url(r'^network_graph/$', NetworkView.as_view(), name='network_graph'),
-    url(r'^decision_tree/$', TreeView.as_view(), name='decision_tree')
+    url(r'^projects/', include('projects.urls'))
 ]
 
 if settings.DEBUG:

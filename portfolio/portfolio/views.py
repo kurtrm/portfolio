@@ -4,30 +4,7 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import FormView
 
 
-class AboutView(TemplateView):
-    """Form view for about me page."""
-
-    template_name = 'portfolio/about.html'
-    success_url = 'about'
-
-
 class HomeView(TemplateView):
     """View for the homepage."""
 
-    template_name = 'portfolio/index.html'
-
-    def get_context_data(self, **kwargs):
-        context = {'test': 'Test string.'}
-        return context
-
-
-class NetworkView(TemplateView):
-    """View for the network graph."""
-
-    template_name = 'portfolio/network.html'
-
-
-class TreeView(TemplateView):
-    """View for the decision tree."""
-
-    template_name = 'portfolio/decision_tree.html'
+    template_name = 'portfolio/home.html'
