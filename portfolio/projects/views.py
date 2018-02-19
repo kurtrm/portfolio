@@ -8,6 +8,7 @@ class ProjectsListView(TemplateView):
 
     template_name = 'projects/projects.html'
 
+
 class NetworkView(TemplateView):
     """View for the network graph."""
 
