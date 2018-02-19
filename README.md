@@ -1,3 +1,3 @@
 # portfolio
 
-This repository is for my own portfolio site. It is primarily built using Django and eventually React.
+This repository is for my own portfolio site. It is built with Django and Bootstrap.
