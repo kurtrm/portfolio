@@ -30,7 +30,6 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/cropped.jpg' %}" alt="">
         </span>
@@ -88,7 +87,7 @@
               </a>
             </li> -->
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/kurtrm">
+              <a href="https://www.linkedin.com/in/kurtrm" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -96,7 +95,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.github.com/kurtrm">
+              <a href="https://www.github.com/kurtrm" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -176,6 +175,9 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-5">Nuclear Engineer Officer Qualification</h3>
+              <p>Junior officers commissioned as submariners are required to complete a rigorous nuclear training curriculum. The final course
+              PNEO, as described below, is a final qualification that enables a junior officer to become an Engineer officer, a department head that oversees
+              a nuclear submarine's reactor and steam plants.</p>
               <div class="subheading mb-0">Naval Nuclear Power Training Command</div>
               <div>Charleston, SC</div>
               <p>Learned the principles of nuclear propulsion systems, emphasizing heat transfer and thermodynamics,
@@ -326,13 +328,13 @@
               go overlooked, and people in need are forced to rely on tribal knowledge of case managers or biased, localized, or outdated sources.</p>
               <p>The website is currently in an MVP status and efforts are being made to accrue data from prevalent resources such as Washington 211.</p>
               <p>The website was built using Django and Bootstrap, and it was deployed with Ansible and AWS.</p>
-              <a href="https://www.github.com/hearthseattle">
+              <a href="https://www.github.com/hearthseattle" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
-              <a href="https://www.hearthseattle.org">
+              <a href="https://www.hearthseattle.org" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
@@ -341,7 +343,7 @@
             </div>
             <div class="resume-date text-md-right">
         <span class="d-none d-lg-block">
-          <a href="https://www.hearthseattle.org"><img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/hearth.jpg' %}" alt=""></a>
+          <a href="https://www.hearthseattle.org" target="_blank"><img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/hearth.jpg' %}" alt=""></a>
         </span>
             </div>
           </div>
@@ -360,13 +362,13 @@
               <p>I implemented my own labeled property graph as a first step to learn more about them. Where a traditional graph may consist
               of a node class or by even going as basic as a dictionary of dictionaries, a labeled property graph needs the relationships to be objects themselves,
             rather than a value in another dictionary. Additionally, they must be directed, and each relationship can contain properties that may give them weights.</p>
-              <a href="https://github.com/kurtrm/phone_network_graph">
+              <a href="https://github.com/kurtrm/phone_network_graph" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
-              <a href="{% url 'network_graph' %}">
+              <a href="{% url 'network_graph' %}" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
@@ -375,33 +377,49 @@
             </div>
             <div class="resume-date text-md-right">
         <span class="d-none d-lg-block">
-          <img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/network_pic.png' %}" alt="">
+          <a href="{% url 'network_graph' %}" target="_blank">
+            <img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/network_pic.png' %}" alt="">
+          </a>
         </span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+              <h3 class="mb-0">Decision Tree</h3>
+              <p>Decision trees are a common machine learning algorithm used for classification and regression tasks. In addition, they are the principle components of
+              random forests and major players in ensemble learning. Here, I implemented my own decision tree which, at the very least, can classify the common iris data set
+              based on petal length and width. I also learned sci-kit learn's implementation, which has a very easy way to export a visualization of the tree using graphviz.
+              The image is available below, and a D3 visualization is under construction. The test suite run on my implementation returns the same values as shown in the tree.</p>
+              <a href="https://github.com/kurtrm/decision_tree" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              <a href="{% url 'decision_tree' %}" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </div>
             <div class="resume-date text-md-right">
         <span class="d-none d-lg-block">
-          <img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/cropped.jpg' %}" alt="">
+          <a href="https://github.com/kurtrm/decision_tree" target="_blank">
+            <img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'decision_tree/iris_tree.png' %}" alt="">
+          </a>
         </span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-        <span class="d-none d-lg-block">
-          <img class="img-fluid-mine rounded-circle mx-auto mb-2" src="{% static 'res_portfolio/img/cropped.jpg' %}" alt="">
-        </span>
+              <h3 class="mb-0"></h3>
+              <div class="subheading mb-3">And more!</div>
+              <p>My GitHub profile has plenty of side projects I've been working on, including implementations of common computer science data structures,
+                 examples of using BeautifulSoup to scrape websites, and notes on machine learning.</p>
+              <a href="https://www.github.com/kurtrm" target="_blank">See Kurt's GitHub profile.</a>
             </div>
           </div>
 
