@@ -25,7 +25,11 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+DOMAIN_IP = os.environ['DOMAIN_IP']
+DOMAIN_NAME = os.environ['DOMAIN_NAME']
+DOMAIN_ADDRESS = os.environ['DOMAIN_ADRESS']
+
+ALLOWED_HOSTS = [DOMAIN_ADDRESS, DOMAIN_IP, DOMAIN_ADDRESS]
 
 
 # Application definition
