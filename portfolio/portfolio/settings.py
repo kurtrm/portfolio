@@ -155,6 +155,6 @@ LOGIN_REDIRECT_URL = 'home'
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), '/var/www/static/')# Extra places for collectstatic to find static files.
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-
-# MEDIA_URL = '/media/'
+# import pdb; pdb.set_trace()
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, '/projects/static/')]
 # MEDIA_ROOT = os.path.join(BASE_DIR, "media")
