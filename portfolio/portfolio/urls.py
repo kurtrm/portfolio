@@ -27,11 +27,8 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('about/', AboutView.as_view(), name='about'),
     path('projects/', include('projects.urls'))
-
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,
                           document_root=settings.STATIC_ROOT)
-    # urlpatterns += static(settings.MEDIA_URL,
-    #                       document_root=settings.MEDIA_ROOT)
