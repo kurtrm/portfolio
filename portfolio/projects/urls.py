@@ -1,11 +1,11 @@
-from django.conf.urls import url
+from django.urls import path
 from projects.views import (ProjectsListView,
                             NetworkView,
                             TreeView)
 
 
 urlpatterns = [
-    url(r'^$', ProjectsListView.as_view(), name='projects'),
-    url(r'^network_graph/$', NetworkView.as_view(), name='network_graph'),
-    url(r'^decision_tree/$', TreeView.as_view(), name='decision_tree')
+    path('', ProjectsListView.as_view(), name='projects'),
+    path('network_graph/', NetworkView.as_view(), name='network_graph'),
+    path('decision_tree/', TreeView.as_view(), name='decision_tree')
 ]

@@ -15,17 +15,19 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import url, include
+from django.urls import (include,
+                         path)
 from django.contrib import admin
 from portfolio.views import (HomeView,
                              AboutView)
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view(), name='home'),
-    url(r'^about/$', AboutView.as_view(), name='about'),
-    url(r'^projects/', include('projects.urls'))
+    path('admin/', admin.site.urls),
+    path('', HomeView.as_view(), name='home'),
+    path('about/', AboutView.as_view(), name='about'),
+    path('projects/', include('projects.urls'))
+
 ]
 
 if settings.DEBUG:
