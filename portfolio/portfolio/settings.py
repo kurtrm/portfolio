@@ -29,7 +29,7 @@ DOMAIN_IP = os.environ['DOMAIN_IP']
 DOMAIN_NAME = os.environ['DOMAIN_NAME']
 DOMAIN_ADDRESS = os.environ['DOMAIN_ADDRESS']
 
-ALLOWED_HOSTS = [DOMAIN_NAME, DOMAIN_IP, DOMAIN_ADDRESS, 'localhost']
+ALLOWED_HOSTS = ['www.kurtrm.com', DOMAIN_NAME, DOMAIN_IP, DOMAIN_ADDRESS, 'localhost']
 
 
 # Application definition
